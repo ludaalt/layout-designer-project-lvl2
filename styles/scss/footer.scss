@@ -1,0 +1,113 @@
+.main-footer {
+	background: linear-gradient(89.02deg, #5328A1 32.83%, #95390C 81.56%);
+	width: 100%;
+}
+
+
+.main-footer {
+	padding-top: 80px;
+	padding-bottom: 100px;
+}
+
+
+
+.footer-list {
+	
+	h4 {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 21px;
+
+		color: #CACACA;
+		margin-bottom: 30px;
+	}
+
+	li {
+		font-weight: normal;
+		font-size: 16px;
+		line-height: 19px;
+
+		color: #CACACA;
+		margin-bottom: 20px;
+		cursor: pointer;
+	}
+}
+
+
+.social-list li:nth-child(1) {
+	background: url("../images/Google+.png") no-repeat center;
+
+	height: 20px;
+	width: 26px;
+}
+
+.social-list li:nth-child(2) {
+	background: url("../images/Twitter.png") no-repeat center;
+	height: 22px;
+	width: 26px;
+
+}
+
+.social-list li:nth-child(3) {
+	background: url("../images/Facebook.png") no-repeat center;
+	height: 20px;
+	width: 12px;
+
+}
+
+.social-list li:nth-child(4) {
+	background: url("../images/Instagram.png") no-repeat center;
+	height: 20px;
+	width: 20px;
+
+}
+
+
+
+
+
+.bottom-footer {
+	padding-top: 50px;
+	padding-bottom: 50px;
+
+	border-top: 1px solid #EEEEEE;
+
+	li {
+		margin-right: 40px;
+	}
+}
+
+
+
+
+
+
+
+@media screen and (max-width:930px) {
+		.footer-list {			
+			width: 45%;
+			margin-bottom: 40px;
+
+			.social-list {
+				width: 200px;
+			}
+		}	
+}
+
+
+@media screen and (max-width:610px) {
+		.footer-list:not(:last-child) {			
+			width: 90%;
+			margin-bottom: 40px;		
+		}
+
+		.bottom-footer .list {
+			flex-direction: column;
+
+			li {
+				margin-bottom: 20px;
+			}
+		}	
+}
+
+

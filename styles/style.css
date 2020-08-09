@@ -1,0 +1,771 @@
+@charset "UTF-8";
+/* основные настройки проекта и цветовые схемы */
+/* основные настройки проекта и цветовые схемы */
+.main-header {
+  /*height: $header-usual-height;*/
+  width: 100%;
+  margin-top: 25px;
+  position: absolute;
+  top: 0;
+  background: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 13px;
+}
+.main-header .logo-link {
+  padding-left: 4px;
+}
+.main-header .main-menu {
+  width: 370px;
+  margin-left: 100px;
+}
+.main-header .main-menu a {
+  color: #808080;
+}
+.main-header .main-menu a:hover {
+  color: #fff;
+}
+
+.search-form-wrap {
+  margin-left: auto;
+}
+.search-form-wrap .search {
+  width: 280px;
+  height: 25px;
+  background: #3C3B3D;
+  border-radius: 50px;
+  border: none;
+}
+.search-form-wrap .search::placeholder {
+  text-transform: uppercase;
+  padding-top: 7px;
+  padding-left: 14px;
+}
+
+@media screen and (max-width: 1280px) {
+  .main-header .main-menu {
+    margin-left: 5%;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .main-header .main-menu {
+    display: flex;
+    flex-direction: column;
+    order: 100;
+    margin-top: 20px;
+    margin-left: 0px;
+    width: 100%;
+  }
+  .main-header .main-menu li {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .logo-wrap {
+    margin-right: 50px;
+    margin-bottom: 10px;
+  }
+
+  .search-form-wrap {
+    margin: 0 auto;
+  }
+}
+/* основные настройки проекта и цветовые схемы */
+.main-title {
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  font-size: 30px;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+.title-section {
+  width: 100%;
+  background: url("../images/banner.png") no-repeat center;
+  background-size: cover;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 270px;
+  padding-bottom: 250px;
+}
+.title-section .text {
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 45px;
+}
+
+.subscription-form {
+  margin: auto;
+  margin-top: 40px;
+  width: 570px;
+  min-height: 120px;
+}
+.subscription-form input {
+  width: 270px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  border-radius: 3px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+}
+.subscription-form ::placeholder {
+  padding-top: 15px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  color: #FFFFFF;
+}
+.subscription-form button {
+  width: 570px;
+  height: 50px;
+  margin-top: 30px;
+  background: #34C176;
+  border: none;
+  cursor: pointer;
+  padding: 17px 215px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+section {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  width: 100%;
+}
+
+.subscription-card {
+  width: 353px;
+  height: 580px;
+  text-align: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.subscription-card h3 {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.subscription-card .subscription-price {
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 70px;
+  text-transform: uppercase;
+  padding: 0;
+  margin-top: 215px;
+  margin-bottom: 35px;
+}
+.subscription-card .subscription-price sup {
+  font-size: 30px;
+  line-height: 35px;
+}
+.subscription-card .subscription-button {
+  border: 4px solid #FFFFFF;
+  border-radius: 4px;
+  width: 302px;
+  height: 70px;
+  padding: 21px 83px;
+  display: block;
+  margin: 0 auto;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+.subscription-card .subscription-description {
+  font-size: 11px;
+  line-height: 13px;
+  margin-top: 40px;
+  margin-left: 22px;
+  margin-right: 22px;
+  padding: 0;
+}
+
+.subscription-card:nth-child(1) {
+  background-image: url("../images/subscribe_1.png");
+}
+
+.subscription-card:nth-child(2) {
+  background-image: url("../images/subscribe_2.png");
+}
+
+.subscription-card:nth-child(3) {
+  background-image: url("../images/subscribe_3.png");
+}
+
+.subscription-card:hover {
+  transition: 0.5s;
+  transform: scale(1.05);
+}
+
+.subscription-text {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+.news-item {
+  width: 45%;
+}
+.news-item h3 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 35px;
+}
+.news-item .news-item-description {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 28px;
+  color: #8C8C8C;
+}
+.news-item .news-publisher {
+  position: relative;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #F89202;
+  padding-left: 40px;
+}
+.news-item .news-publisher::before {
+  position: absolute;
+  content: url("../images/avatar.png");
+  width: 19px;
+  height: 19px;
+  left: 0;
+  top: -4px;
+}
+.news-item .news-publisher::after {
+  position: absolute;
+  content: "|";
+  color: #B8B8B8;
+  left: 130px;
+}
+.news-item .news-date {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #555555;
+  padding-left: 50px;
+}
+.news-item .to-album {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #8C8C8C;
+  border: 1px solid #E9E9E9;
+  width: 129px;
+  height: 40px;
+}
+
+.mobile-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #8C8C8C;
+  margin-bottom: 25px;
+}
+
+.mobile-button {
+  display: block;
+  width: 173px;
+  height: 50px;
+  background: #FF4157;
+  border-radius: 50px;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 1260px) {
+  .subscription-card {
+    margin: 0 10px 20px 10px;
+    align-self: center;
+  }
+
+  .subscription-card:last-child {
+    align-self: flex-start;
+    /*float: left;*/
+  }
+
+  .news-item,
+.news-item + p {
+    border: 2px solid red;
+    margin: 10px auto;
+  }
+
+  .news-item + p {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .title-section {
+    padding-top: 220px;
+    padding-bottom: 200px;
+  }
+
+  .main-title {
+    font-size: 45px;
+  }
+
+  .subtitle + .text {
+    width: 420px;
+    /*to make the text take up two lines*/
+    margin: 45px auto;
+  }
+
+  .news-item,
+.news-item + p {
+    width: 90%;
+    border: 2px solid red;
+    margin: 10px auto;
+  }
+
+  .news-item + p {
+    order: -1;
+  }
+}
+@media screen and (max-width: 900px) {
+  .title-section {
+    padding-top: 210px;
+    padding-bottom: 160px;
+  }
+
+  .main-title {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size: 25px;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main-title {
+    font-size: 30px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+
+  .subtitle + .text {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .subtitle + .text {
+    font-size: 12px;
+    padding: 0 60px;
+  }
+
+  .subscription-form input,
+.subscription-form button {
+    width: 100%;
+    height: 60px;
+  }
+
+  .subscription-form input {
+    margin-bottom: 30px;
+  }
+
+  .subscription-form button {
+    padding: 0;
+    margin: 0;
+  }
+
+  .subscription-form {
+    width: 280px;
+  }
+
+  .title-section {
+    padding-bottom: 50px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .subscription-card {
+    width: 280px;
+    height: 463px;
+  }
+  .subscription-card h3 {
+    font-size: 16px;
+    line-height: 19px;
+    margin-top: 20px;
+  }
+  .subscription-card .subscription-price {
+    margin-top: 167px;
+    margin-bottom: 30px;
+  }
+  .subscription-card .subscription-button {
+    width: 239px;
+    height: 55px;
+    padding: 20px 65px;
+    font-size: 12px;
+    /*** 24px/2 ***/
+    line-height: 14px;
+    /*** 28px/2 ***/
+  }
+  .subscription-card .subscription-description {
+    font-size: 11px;
+    line-height: 13px;
+    margin-left: 18px;
+    margin-right: 18px;
+  }
+
+  .subscription-text {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}
+.catalog-title-section {
+  width: 100%;
+  background: url("../images/Morten Harket.png") no-repeat center;
+  padding-top: 265px;
+  padding-bottom: 80px;
+}
+.catalog-title-section .text {
+  margin-top: 25px;
+  margin-bottom: 40px;
+}
+.catalog-title-section .btn {
+  width: 200px;
+  height: 50px;
+  position: relative;
+  background: none;
+  border: none;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-align: left;
+  padding-left: 50px;
+}
+.catalog-title-section .btn-purple {
+  background: #5328A1;
+}
+.catalog-title-section .btn-purple::before {
+  position: absolute;
+  content: url("../images/play-button.svg");
+  height: 20px;
+  width: 20px;
+  left: 15px;
+  top: 15px;
+}
+.catalog-title-section .btn-brick {
+  background: #95390C;
+  margin-left: 35px;
+}
+.catalog-title-section .btn-brick::before {
+  position: absolute;
+  content: url("../images/heart.svg");
+  height: 20px;
+  width: 20px;
+  left: 15px;
+  top: 15px;
+}
+
+.song {
+  position: relative;
+  width: 530px;
+  border: 2px solid yellow;
+  margin-bottom: 25px;
+}
+.song .song-title {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  margin-left: 17px;
+}
+.song .song-title span {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 14px;
+  color: #808080;
+}
+.song .song-duration {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #8C8C8C;
+  margin-left: auto;
+}
+.song .album-cover {
+  width: 55px;
+  height: 50px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  background-image: url("../images/Wild Seed.png");
+  background-size: contain;
+  /*&:nth-child(1) {
+  	background-image: url("../images/Wild Seed.png");   
+  }*/
+}
+
+.play {
+  position: absolute;
+  content: "";
+  background: none;
+  background-image: url("../images/play-button.svg");
+  border: none;
+  cursor: pointer;
+  bottom: 10px;
+  left: 15px;
+  width: 25px;
+  height: 25px;
+}
+
+.album-title {
+  margin: 10px 0;
+}
+
+.similar-singer {
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.listenership {
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 50px;
+}
+
+.main-footer {
+  background: linear-gradient(89.02deg, #5328A1 32.83%, #95390C 81.56%);
+  width: 100%;
+}
+
+.main-footer {
+  padding-top: 80px;
+  padding-bottom: 100px;
+}
+
+.footer-list h4 {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 21px;
+  color: #CACACA;
+  margin-bottom: 30px;
+}
+.footer-list li {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #CACACA;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.social-list li:nth-child(1) {
+  background: url("../images/Google+.png") no-repeat center;
+  height: 20px;
+  width: 26px;
+}
+
+.social-list li:nth-child(2) {
+  background: url("../images/Twitter.png") no-repeat center;
+  height: 22px;
+  width: 26px;
+}
+
+.social-list li:nth-child(3) {
+  background: url("../images/Facebook.png") no-repeat center;
+  height: 20px;
+  width: 12px;
+}
+
+.social-list li:nth-child(4) {
+  background: url("../images/Instagram.png") no-repeat center;
+  height: 20px;
+  width: 20px;
+}
+
+.bottom-footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #EEEEEE;
+}
+.bottom-footer li {
+  margin-right: 40px;
+}
+
+@media screen and (max-width: 930px) {
+  .footer-list {
+    width: 45%;
+    margin-bottom: 40px;
+  }
+  .footer-list .social-list {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 610px) {
+  .footer-list:not(:last-child) {
+    width: 90%;
+    margin-bottom: 40px;
+  }
+
+  .bottom-footer .list {
+    flex-direction: column;
+  }
+  .bottom-footer .list li {
+    margin-bottom: 20px;
+  }
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  color: #fff;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.padding-top70 {
+  padding-top: 70px;
+}
+
+.margin-left-50px {
+  margin-left: -50px;
+}
+
+.margin-left50px {
+  margin-left: 50px;
+}
+
+.margin-bottom50 {
+  margin-bottom: 50px;
+}
+
+.relative {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.flex-justify-content-between {
+  justify-content: space-between;
+}
+.flex-justify-content-center {
+  justify-content: center;
+}
+.flex-justify-content-around {
+  justify-content: space-around;
+}
+.flex-align-items-stretch {
+  align-items: stretch;
+}
+.flex-align-items-center {
+  align-items: center;
+}
+.flex-column {
+  flex-direction: column;
+}
+.flex-row {
+  flex-direction: row;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.list a {
+  text-decoration: none;
+  font: inherit;
+}
+
+.w50 {
+  max-width: 50%;
+}
+
+.order-less {
+  order: -1;
+}
+
+.vusually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.section-title {
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.margin-auto {
+  margin: auto;
+}
+
+@media screen and (max-width: 1280px) {
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 20px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
